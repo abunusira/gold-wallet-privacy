@@ -1,20 +1,68 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>سياسة الخصوصية - Privacy Policy</title>
+  <title>سياسة الخصوصية - محفظة الذهب | Privacy Policy - Gold Wallet</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 40px; text-align: center; }
-    h1 { color: #b8860b; }
-    a { display: block; margin: 15px; font-size: 18px; text-decoration: none; color: #0066cc; }
-    a:hover { text-decoration: underline; }
+    body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.8; }
+    h1, h2 { color: #b8860b; }
+    ul { list-style-type: disc; padding-right: 20px; }
+    .lang-switch { margin: 20px 0; }
+    button { padding: 8px 16px; margin: 5px; cursor: pointer; border: 1px solid #b8860b; background: #fff; border-radius: 5px; }
+    button:hover { background: #f8f1da; }
   </style>
 </head>
 <body>
-  <h1>سياسة الخصوصية - Privacy Policy</h1>
-  <p>اختر اللغة / Select Language</p>
-  
-  <a href="privacy.html">🇸🇦 العربية</a>
-  <a href="privacy-en.html">🇬🇧 English</a>
+
+  <!-- أزرار تغيير اللغة -->
+  <div class="lang-switch" style="text-align:center;">
+    <button onclick="showAr()">🇸🇦 العربية</button>
+    <button onclick="showEn()">🇬🇧 English</button>
+  </div>
+
+  <!-- المحتوى العربي -->
+  <div id="ar" style="direction: rtl; text-align: right;">
+    <h1>سياسة الخصوصية – تطبيق محفظة الذهب</h1>
+    <p>نحن نحترم خصوصية مستخدمينا. تطبيق <b>محفظة الذهب</b> لا يقوم بجمع أو مشاركة أي بيانات شخصية عبر الإنترنت.</p>
+    <ul>
+      <li>جميع البيانات (مثل الممتلكات المسجلة، الأسعار، الحسابات) يتم حفظها محليًا على جهازك فقط.</li>
+      <li>لا يتم إرسال أي بيانات إلى خوادم خارجية أو إلى مطوّر التطبيق.</li>
+      <li>قد يتم عرض إعلانات من خلال خدمة <b>Google AdMob</b>، وهي التي قد تستخدم معرفات مجهولة لعرض إعلانات مخصصة وفق سياسات Google.</li>
+      <li>إذا اخترت الاشتراك لإزالة الإعلانات، تتم عملية الدفع والتحصيل عبر <b>Google Play Billing</b> فقط، ولا نحتفظ بأي بيانات دفع.</li>
+    </ul>
+    <p>يمكنك التواصل معنا لأي استفسار عبر البريد الإلكتروني: <a href="mailto:abunusira@gmail.com">abunusira@gmail.com</a></p>
+
+    <h2>إخلاء المسؤولية</h2>
+    <p>جميع الأسعار والحسابات المعروضة في التطبيق لأغراض شخصية تقريبية فقط. التطبيق لا يُعتبر أداة استثمارية أو استشارة مالية أو شرعية. على المستخدم التأكد من صحة المعلومات قبل اتخاذ أي قرار مالي أو شرعي.</p>
+  </div>
+
+  <!-- المحتوى الإنجليزي -->
+  <div id="en" style="display:none; direction: ltr; text-align: left;">
+    <h1>Privacy Policy – Gold Wallet App</h1>
+    <p>We respect the privacy of our users. The <b>Gold Wallet</b> app does not collect or share any personal data online.</p>
+    <ul>
+      <li>All data (such as registered assets, prices, and calculations) is stored locally on your device only.</li>
+      <li>No data is transmitted to external servers or to the app developer.</li>
+      <li>The app may display ads via <b>Google AdMob</b>, which may use anonymous identifiers to serve personalized ads according to Google policies.</li>
+      <li>If you choose to subscribe to remove ads, payments are processed exclusively through <b>Google Play Billing</b>. We do not store any payment details.</li>
+    </ul>
+    <p>For inquiries, please contact us at: <a href="mailto:abunusira@gmail.com">abunusira@gmail.com</a></p>
+
+    <h2>Disclaimer</h2>
+    <p>All prices and calculations displayed in the app are for personal and approximate use only. The app is not intended to provide investment, financial, or religious advice. Users should verify information independently before making any financial or religious decisions.</p>
+  </div>
+
+  <!-- JavaScript لتبديل اللغات -->
+  <script>
+    function showAr() {
+      document.getElementById("ar").style.display = "block";
+      document.getElementById("en").style.display = "none";
+    }
+    function showEn() {
+      document.getElementById("ar").style.display = "none";
+      document.getElementById("en").style.display = "block";
+    }
+  </script>
+
 </body>
 </html>
