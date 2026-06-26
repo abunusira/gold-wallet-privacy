@@ -1,25 +1,216 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Privacy Policy - Gold Wallet</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
-    h1, h2 { color: #b8860b; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy - Gold Wallet</title>
+
+<style>
+body{
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background: #fafafa;
+}
+.container{
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+h1,h2{
+  color: #b8860b;
+}
+.lang-switch{
+  text-align: right;
+  margin-bottom: 20px;
+}
+button{
+  background: #b8860b;
+  color: #fff;
+  border: 0;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+button:hover{
+  opacity: 0.9;
+}
+.ar{
+  display: none;
+  direction: rtl;
+  text-align: right;
+}
+.en{
+  direction: ltr;
+  text-align: left;
+}
+a{
+  color: #b8860b;
+}
+</style>
 </head>
+
 <body>
-  <h1>Privacy Policy – Gold Wallet App</h1>
-  <p>We respect the privacy of our users. The <b>Gold Wallet</b> app does not collect or share any personal data online.</p>
+<div class="container">
+
+<div class="lang-switch">
+  <button onclick="toggleLanguage()">العربية / English</button>
+</div>
+
+<div class="en" id="enContent">
+  <h1>Privacy Policy – Gold Wallet</h1>
+  <p><strong>Last Updated:</strong> June 2026</p>
+
+  <p>Gold Wallet respects your privacy and is designed with a local-first approach. Most of your information remains stored on your device unless you choose to enable cloud backup.</p>
+
+  <h2>Information Stored on Your Device</h2>
   <ul>
-    <li>All data (such as registered assets, prices, and calculations) is stored locally on your device only.</li>
-    <li>No data is transmitted to external servers or to the app developer.</li>
-    <li>The app may display ads via <b>Google AdMob</b>, which may use anonymous identifiers to serve personalized ads according to Google policies.</li>
-    <li>If you choose to subscribe to remove ads, payments are processed exclusively through <b>Google Play Billing</b>. We do not store any payment details.</li>
+    <li>Your portfolio data.</li>
+    <li>Gold items, weights, and purchase information.</li>
+    <li>Application settings.</li>
+    <li>Photos attached to your items.</li>
+    <li>Locally generated reports.</li>
   </ul>
-  <p>For inquiries, please contact us at: <a href="mailto:abunusira@gmail.com">abunusira@gmail.com</a></p>
+
+  <h2>Cloud Backup (Optional)</h2>
+  <p>If you enable Cloud Backup, the app creates an encrypted backup of your data.</p>
+  <ul>
+    <li>On Android, backups are stored in your own Google Drive App Data storage.</li>
+    <li>On Apple devices, backups are stored in your own iCloud account.</li>
+    <li>We do not store backups on developer-owned servers.</li>
+    <li>We cannot access, view, or restore your backup files.</li>
+  </ul>
+
+  <h2>Authentication</h2>
+  <p>The app may use Google Sign-In or Sign in with Apple only to connect to your personal cloud backup storage.</p>
+
+  <h2>Analytics and Notifications</h2>
+  <p>The app may use Firebase Analytics, Firebase Cloud Messaging, and Firebase In-App Messaging to improve the app experience, deliver notifications, and show important in-app messages. These services do not include the contents of your portfolio or backup files.</p>
+
+  <h2>Advertising</h2>
+  <p>The free version may display ads through Google AdMob. Google may use advertising identifiers according to its own privacy policy. On Apple devices, the app may request permission through App Tracking Transparency before personalized ads are enabled.</p>
+
+  <h2>In-App Purchases</h2>
+  <p>If you purchase premium features or remove ads, payments are processed by Google Play or the Apple App Store. We do not collect or store your payment information.</p>
+
+  <h2>Third-Party Services</h2>
+  <ul>
+    <li>Google AdMob</li>
+    <li>Firebase Analytics</li>
+    <li>Firebase Cloud Messaging</li>
+    <li>Firebase In-App Messaging</li>
+    <li>Google Sign-In</li>
+    <li>Google Drive App Data</li>
+    <li>Sign in with Apple</li>
+    <li>Apple iCloud</li>
+  </ul>
+
+  <h2>Your Choices</h2>
+  <ul>
+    <li>You may use the app offline.</li>
+    <li>You may enable or disable cloud backup.</li>
+    <li>You may delete your cloud backup.</li>
+    <li>You may sign out of your cloud account.</li>
+    <li>You may delete local app data from your device.</li>
+  </ul>
 
   <h2>Disclaimer</h2>
-  <p>All prices and calculations displayed in the app are for personal and approximate use only. The app is not intended to provide investment, financial, or religious advice. Users should verify information independently before making any financial or religious decisions.</p>
+  <p>Gold prices, calculations, profit estimates, and reports are provided for personal informational purposes only. The app does not provide financial, investment, accounting, legal, tax, or religious advice.</p>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:abunusira@gmail.com">abunusira@gmail.com</a></p>
+</div>
+
+<div class="ar" id="arContent">
+  <h1>سياسة الخصوصية – تطبيق محفظة الذهب</h1>
+  <p><strong>آخر تحديث:</strong> يونيو 2026</p>
+
+  <p>يحترم تطبيق محفظة الذهب خصوصيتك، وقد تم تصميمه ليعمل بشكل أساسي محليًا على جهازك. تبقى معظم بياناتك محفوظة على جهازك، إلا إذا اخترت تفعيل النسخ الاحتياطي السحابي.</p>
+
+  <h2>المعلومات المخزنة على جهازك</h2>
+  <ul>
+    <li>بيانات محفظتك.</li>
+    <li>عناصر الذهب والأوزان ومعلومات الشراء.</li>
+    <li>إعدادات التطبيق.</li>
+    <li>الصور المرتبطة بالعناصر.</li>
+    <li>التقارير التي يتم إنشاؤها محليًا.</li>
+  </ul>
+
+  <h2>النسخ الاحتياطي السحابي (اختياري)</h2>
+  <p>عند تفعيل النسخ الاحتياطي السحابي، يقوم التطبيق بإنشاء نسخة احتياطية مشفرة من بياناتك.</p>
+  <ul>
+    <li>في أجهزة Android، يتم حفظ النسخة في مساحة Google Drive App Data الخاصة بحسابك.</li>
+    <li>في أجهزة Apple، يتم حفظ النسخة في حساب iCloud الخاص بك.</li>
+    <li>لا نقوم بتخزين النسخ الاحتياطية على خوادم مملوكة للمطور.</li>
+    <li>لا يمكننا الوصول إلى ملفات النسخ الاحتياطي أو عرضها أو استعادتها.</li>
+  </ul>
+
+  <h2>تسجيل الدخول</h2>
+  <p>قد يستخدم التطبيق تسجيل الدخول عبر Google أو Apple فقط لربط التطبيق بمساحة النسخ الاحتياطي السحابي الخاصة بك.</p>
+
+  <h2>التحليلات والإشعارات</h2>
+  <p>قد يستخدم التطبيق Firebase Analytics وFirebase Cloud Messaging وFirebase In-App Messaging لتحسين تجربة التطبيق، وإرسال الإشعارات، وعرض رسائل مهمة داخل التطبيق. لا تتضمن هذه الخدمات محتوى محفظتك أو ملفات النسخ الاحتياطي.</p>
+
+  <h2>الإعلانات</h2>
+  <p>قد يعرض الإصدار المجاني إعلانات من خلال Google AdMob. قد تستخدم Google معرّفات الإعلانات وفقًا لسياسة الخصوصية الخاصة بها. في أجهزة Apple، قد يطلب التطبيق إذن التتبع من خلال App Tracking Transparency قبل تفعيل الإعلانات المخصصة.</p>
+
+  <h2>المشتريات داخل التطبيق</h2>
+  <p>إذا قمت بشراء ميزات مدفوعة أو إزالة الإعلانات، تتم معالجة المدفوعات من خلال Google Play أو Apple App Store. نحن لا نجمع أو نخزن معلومات الدفع الخاصة بك.</p>
+
+  <h2>الخدمات الخارجية</h2>
+  <ul>
+    <li>Google AdMob</li>
+    <li>Firebase Analytics</li>
+    <li>Firebase Cloud Messaging</li>
+    <li>Firebase In-App Messaging</li>
+    <li>Google Sign-In</li>
+    <li>Google Drive App Data</li>
+    <li>Sign in with Apple</li>
+    <li>Apple iCloud</li>
+  </ul>
+
+  <h2>اختياراتك</h2>
+  <ul>
+    <li>يمكنك استخدام التطبيق بدون إنترنت.</li>
+    <li>يمكنك تفعيل أو تعطيل النسخ الاحتياطي السحابي.</li>
+    <li>يمكنك حذف النسخة الاحتياطية السحابية.</li>
+    <li>يمكنك تسجيل الخروج من حسابك السحابي.</li>
+    <li>يمكنك حذف بيانات التطبيق المحلية من جهازك.</li>
+  </ul>
+
+  <h2>إخلاء المسؤولية</h2>
+  <p>أسعار الذهب والحسابات وتقديرات الأرباح والتقارير المعروضة في التطبيق مقدمة لأغراض معلوماتية وشخصية فقط. لا يقدم التطبيق نصائح مالية أو استثمارية أو محاسبية أو قانونية أو ضريبية أو دينية.</p>
+
+  <h2>التواصل</h2>
+  <p><a href="mailto:abunusira@gmail.com">abunusira@gmail.com</a></p>
+</div>
+
+</div>
+
+<script>
+function toggleLanguage(){
+  const en = document.getElementById('enContent');
+  const ar = document.getElementById('arContent');
+
+  if(en.style.display === 'none'){
+    en.style.display = 'block';
+    ar.style.display = 'none';
+    document.documentElement.lang = 'en';
+  }else{
+    en.style.display = 'none';
+    ar.style.display = 'block';
+    document.documentElement.lang = 'ar';
+  }
+}
+</script>
+
 </body>
 </html>
+```
